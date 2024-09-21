@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, viewport-fit=cover">
+    
+    
+    <title>Bubble Wipeout</title>
+    <meta name="keywords" content="Bubble Wipeout">
+    <meta name="description" content="Bubble Wipeout">
+
+    <script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag() { dataLayer.push(arguments); }
+		gtag('js', new Date());
+
+
+	</script>
+
+	<script>
+		window.onload = function () {
+			var playContentDiv = document.querySelector('.play-content');
+			if (playContentDiv) {
+				var iframe = playContentDiv.querySelector('iframe');
+				if (iframe && iframe.src) {
+					window.location.href = iframe.src;
+				}
+			}
+		};
+	</script>
+    
+    <style type="text/css">
+	* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+			outline: 0;
+			-webkit-tap-highlight-color: transparent;
+	}
+	html,body {
+			min-height: 100%;
+			width: 100%;
+			line-height: 1.2;
+			font-family: "Open Sans",sans-serif,system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,"Apple Color Emoji","Segoe UI Emoji",Segoe UI Symbol,"Noto Color Emoji";
+			/* background-color: #f6f9ff; */
+			-webkit-font-smoothing: antialiased;
+			font-weight: 400;
+	}
+
+	img {
+			max-width: 100%;
+			vertical-align: top;
+	}
+
+	h1,h2,h3,h4,h5,h6 {
+			font-size: inherit;
+			font-family: inherit;
+			font-weight: normal;
+	}
+
+	a {
+			text-decoration: none;
+	}
+	body {
+		height: 100vh;
+	}
+	.play-page {
+		width: 100%;
+		height: 100%;
+	}
+
+	.play-content {
+		width: inherit;
+		height: inherit;
+	}
+
+	.play-content >iframe {
+		display: block;
+		width: 1px;
+		min-width: 100%;
+		height: 1px;
+		min-height: 100%;
+		border: 0;
+		overflow: hidden;
+	}
+
+	.site-footer {
+			color: #663d00;
+			font-size: 3.2vw;
+			padding: 5.33333vw 0;
+			position: relative;
+			text-align: center;
+	}
+	.site-footer .links {
+			margin-bottom: 1.6vw;
+	}
+	.site-footer a {
+			color: #663d00;
+			margin: 0 1.06667vw;
+			text-decoration: underline;
+	}
+	.go-home {
+		position: fixed;
+		right: 0;
+		top: 30%;
+		z-index: 10000;
+		transform: translateY(-50%);
+		background-color: #fff;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		line-height: 1;
+		width: 40px;
+		height: 40px;
+		box-shadow: 0 0 5px rgba(0,0,0, .15);
+		border-top-left-radius: 10px;
+		border-bottom-left-radius: 10px;
+	}
+	.go-home .icon {
+		font-size: 24px;
+	}
+</style>
+
+		<script>
+			var gameInfo = {"createTime":"2024-09-18 12:20:00","gameId":"0","content":"Beautifully crafted bubble dragon game. Launch balls of the same color into many balls, when the color is the same eliminate and score points.\n","domain_id":"1","title":"Bubble Wipeout","rating":"4.8","hit":"15289","keywords":"Bubble Wipeout","addtime":"2024-01-07 08:00:00","gameName":"","tag":"Casual","id":"1674","creatorId":"4","thumb":"/uploads/20240107/f28d4ef8d781cea1205d22fa8cebb363.jpg","gameLink":"//gamescdn.gamezop.com/H1AN6fkwqJ7/index.html?sessionStartPage=astro&id=zv1Y2I8P&nonce=1.35.50","description":"Bubble Wipeout"}
+			var playHistory = localStorage.getItem('funpro-play-history') ? JSON.parse(String(localStorage.getItem('funpro-play-history'))) || [] : [];
+			var gameID = gameInfo.id;
+
+			if (playHistory.some(o => o.id === gameID)) {
+				playHistory.splice(playHistory.findIndex(i => i.id === gameID), 1);
+			}
+
+			playHistory.unshift(gameInfo);
+			if (playHistory.length > 10) {
+				playHistory.pop();
+			}
+			localStorage.setItem('funpro-play-history', JSON.stringify(playHistory));
+		</script>
+
+</head>
+<body>
+    
+<main class="play-page">
+	<a href="https://playfun.live/" class="go-home"><svg t="1721396655226" class="icon" viewBox="0 0 1025 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="4300" width="24" height="24"><path d="M992.090881 443.129l-388.66-404.16C579.320881 13.934 546.998881 0.023 512.424881 0.023s-66.896 13.776-91.006 38.946L32.889881 443.129c-40.138 41.728-34.972 77.759-28.348 92.86 4.769 10.731 20.665 40.005 66.63 40.005l56.961 0 0 310.902c0 70.604 50.736 137.104 122.797 137.104l165.454 0L416.383881 694.949c0-35.236-5.298-54.974 30.733-54.974l130.745 0c36.031 0 30.733 19.605 30.733 54.974L608.594881 1024l165.321 0c72.063 0 122.797-66.499 122.797-137.104L896.712881 575.994l56.961 0c45.966 0 61.862-29.407 66.63-40.005C1026.927881 520.888 1032.094881 484.856 992.090881 443.129L992.090881 443.129zM953.676881 512.013 832.601881 512.013l0 374.884c0 35.237-22.784 72.99-58.815 72.99L672.446881 959.887 672.446881 694.949c0-70.604-22.652-118.956-94.717-118.956L446.985881 575.993c-72.063 0-94.717 48.352-94.717 118.956l0 265.069L250.929881 960.018c-36.031 0-58.816-37.754-58.816-72.99L192.113881 512.145 71.038881 512.145c-1.191 0-2.118-4.371-3.047-4.503 2.253-3.843 6.094-13.646 12.452-20.269l388.66-403.895c11.525-12.187 27.95-19.473 43.848-19.34 15.895-0.132 31.262 7.285 42.919 19.34L944.398881 487.24c6.358 6.623 10.199 16.426 12.32 20.269-0.796 0.132-1.856 4.503-3.047 4.503L953.676881 512.013z" fill="#1296db" p-id="4301"></path></svg></a>
+	<div class="play-content">
+		<iframe src="https://gamescdn.gamezop.com/H1AN6fkwqJ7/index.html?sessionStartPage=astro&amp;id=zv1Y2I8P&amp;nonce=1.35.50" frameborder="0"
+			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" scrolling="no"
+			allowfullscreen></iframe>
+	</div>
+</main>
+
+    
+    <footer class="site-footer">
+        <div class="links">
+            <a href="https://playfun.live/about/">About Us</a>
+            <a href="https://playfun.live/contact/">Contact Us</a>
+            <a href="https://playfun.live/privacy_policy/">Privacy Policy</a>
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; <script>document.write(new Date().getFullYear().toString());</script> <script>document.write(location.hostname);</script></p>
+            <p>All rights reserved.</p>
+        </div>
+    </footer>
+    
+</body>
+</html>
